@@ -1,0 +1,216 @@
+oct 30, 2024 1:13:22 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:14:28 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:16:08 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:19:26 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:23:54 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:30:57 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:31:46 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:35:04 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:37:51 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:38:47 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:42:52 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:43:52 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:45:01 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:47:22 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:48:30 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:49:39 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:50:20 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:55:04 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 1:55:14 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion porjuan,2024-10-30
+oct 30, 2024 2:06:30 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 2:06:41 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  juan,2024-10-30
+oct 30, 2024 2:39:06 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 2:39:17 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  juan,2024-10-30
+oct 30, 2024 7:15:03 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 7:24:32 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 7:24:45 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  juan,2024-10-30
+oct 30, 2024 9:44:41 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 9:45:06 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  juan,2024-10-30
+oct 30, 2024 9:53:59 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 9:54:41 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 9:55:07 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  juan,2024-10-30
+oct 30, 2024 11:42:28 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 11:42:41 A. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  juan,2024-10-30
+oct 30, 2024 6:17:04 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 6:17:56 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 6:19:54 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 6:20:03 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 6:21:07 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 6:21:23 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 6:24:02 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 6:24:11 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 6:25:14 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 6:25:21 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 6:27:46 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 6:27:57 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 6:41:59 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 6:42:07 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 6:44:48 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 6:44:56 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 6:49:27 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 6:49:34 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 6:50:21 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 6:50:28 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 6:51:28 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 6:51:36 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 6:53:08 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 6:53:15 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 6:56:28 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 6:57:10 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 6:57:20 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 6:59:00 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 6:59:07 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 7:03:55 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 7:04:04 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 7:05:24 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 7:05:31 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 7:07:33 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 7:07:39 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 7:08:18 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 7:08:24 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 7:11:15 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 7:11:21 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 7:12:27 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 7:12:34 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 7:17:55 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 7:18:02 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 7:18:39 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 7:18:46 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 7:27:20 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 7:27:28 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 7:31:13 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 7:31:19 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 7:32:16 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 7:32:23 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 8:02:10 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 8:02:17 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 8:04:06 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 8:04:12 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 8:06:17 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 8:06:27 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 8:07:50 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 8:07:57 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 8:09:16 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 8:09:24 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 8:09:59 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 8:10:09 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 8:11:21 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 8:11:30 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 8:13:19 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 8:13:28 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 8:13:51 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 8:14:00 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 8:14:35 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 8:14:50 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 8:16:18 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 8:16:29 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  david,2024-10-30
+oct 30, 2024 8:27:53 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Secion,Inicio Secicion,2024-10-30
+oct 30, 2024 8:27:59 P. M. util.ArchivoUtils guardarRegistroLog
+INFO: Inicio de seccion,Inicio de secion por  gaga,2024-10-30
