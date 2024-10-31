@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="22.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList"/>
+</java>
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="22.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList"/>
+</java>
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="22.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="model.Vendedor">
+    <void property="apellido">
+     <string>dfgdfg</string>
+    </void>
+    <void property="cedula">
+     <string>fdgd</string>
+    </void>
+    <void property="nombre">
+     <string>dfgdg</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="22.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="model.Vendedor">
+    <void property="apellido">
+     <string>fdgfdg</string>
+    </void>
+    <void property="cedula">
+     <string>fdgdf</string>
+    </void>
+    <void property="nombre">
+     <string>fdgdfg</string>
+    </void>
+   </object>
+  </void>
+ </object>
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="22.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="model.Vendedor">
+    <void property="apellido">
+     <string>fdgfdg</string>
+    </void>
+    <void property="cedula">
+     <string>fdgdf</string>
+    </void>
+    <void property="nombre">
+     <string>fdgdfg</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
+</java>
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="22.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="model.Vendedor">
+    <void property="apellido">
+     <string>castillo</string>
+    </void>
+    <void property="cedula">
+     <string>1000624491</string>
+    </void>
+    <void property="nombre">
+     <string>juan</string>
+    </void>
+   </object>
+  </void>
+ </object>
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="22.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="model.Vendedor">
+    <void property="apellido">
+     <string>castillo</string>
+    </void>
+    <void property="cedula">
+     <string>1000624491</string>
+    </void>
+    <void property="nombre">
+     <string>juan</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
+</java>
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="22.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="model.Vendedor">
+    <void property="apellido">
+     <string>fafa</string>
+    </void>
+    <void property="cedula">
+     <string>fafa</string>
+    </void>
+    <void property="nombre">
+     <string>fafa</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="22.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="model.Vendedor">
+    <void property="apellido">
+     <string>fafa</string>
+    </void>
+    <void property="cedula">
+     <string>fafa</string>
+    </void>
+    <void property="nombre">
+     <string>fafa</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
