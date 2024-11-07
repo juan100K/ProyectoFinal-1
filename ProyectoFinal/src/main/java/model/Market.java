@@ -1,15 +1,20 @@
 package model;
 
+import controller.ModelController;
+import controller.ServiceController.VendedroInterface;
 import maper.dto.VendedorDto;
 import maper.mapper.MapperMarket;
 
 import java.util.ArrayList;
 
-public class Market  {
+public class Market implements VendedroInterface {
 
     MapperMarket mapperMarket=MapperMarket.INSTANCE;
 
+    ModelController modelController;
+
     ArrayList<Vendedor>listaVendedores=new ArrayList<Vendedor>();
+    ArrayList<Productos>listaProducto=new ArrayList<>();
 
     public ArrayList<Vendedor> getListaVendedores() {
         return listaVendedores;
@@ -34,6 +39,17 @@ public class Market  {
         getListaVendedores().add(vendedor);
 
         return vendedor;
+    }
+
+
+    @Override
+    public boolean agregarEmpleado(VendedorDto vendedorDto) {
+        return modelController.agregarEmplado(vendedorDto);
+    }
+
+
+    public void agregarVendedor(Vendedor vendedor){
+        getListaVendedores().add(vendedor);
     }
 
 

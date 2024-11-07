@@ -27,9 +27,9 @@ public class ArchivoUtils {
 
 
 
-    public void xml(String nombre,Object object,boolean anexar)throws IOException{
+    public static void xml(String nombre,Object object)throws IOException{
         XMLEncoder codificar;
-        codificar=new XMLEncoder(new FileOutputStream(nombre,anexar));
+        codificar=new XMLEncoder(new FileOutputStream(nombre));
         codificar.writeObject(object);
         codificar.close();
 
@@ -45,6 +45,7 @@ public class ArchivoUtils {
         return object;
 
     }
+
 
 
 

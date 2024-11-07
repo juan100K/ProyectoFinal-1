@@ -8,39 +8,27 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="453.0" prefWidth="653.0" style="-fx-background-color: white;"
-            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="viewController.LogginviewController">
-   <ImageView fitHeight="126.0" fitWidth="151.0" layoutX="264.0" layoutY="14.0" pickOnBounds="true"
-              preserveRatio="true">
-      <Image url="@../../imagenes/admin.png"/>
+<AnchorPane prefHeight="453.0" prefWidth="653.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.LogginviewController">
+   <ImageView fitHeight="126.0" fitWidth="151.0" layoutX="276.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../imagenes/admin.png" />
    </ImageView>
-   <Label alignment="CENTER" layoutX="272.0" layoutY="126.0" prefHeight="29.0" prefWidth="111.0"
-          style="-fx-background-color: purple; -fx-background-radius: 50; -fx-background-position: 50; -fx-border-radius: 50; -fx-text-fill: white;"
-          text="BIENVENIDO" textAlignment="CENTER" textFill="#0ce3ff">
+   <Label alignment="CENTER" layoutX="283.0" layoutY="126.0" prefHeight="29.0" prefWidth="111.0" style="-fx-background-color: blue; -fx-background-radius: 50; -fx-background-position: 50; -fx-border-radius: 50; -fx-text-fill: white;" text="BIENVENIDO" textAlignment="CENTER" textFill="#0ce3ff">
       <font>
-         <Font name="System Bold Italic" size="13.0"/>
+         <Font name="System Bold Italic" size="13.0" />
       </font>
    </Label>
-   <Label alignment="TOP_LEFT" graphicTextGap="10.0" layoutX="255.0" layoutY="169.0" prefHeight="17.0" prefWidth="160.0"
-          style="-fx-background-color: white; -fx-text-fill: black; -fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 50;"
-          text="                   Nombre" textOverrun="LEADING_WORD_ELLIPSIS"/>
-   <Label alignment="TOP_LEFT" graphicTextGap="10.0" layoutX="255.0" layoutY="256.0" prefHeight="17.0" prefWidth="160.0"
-          style="-fx-background-color: white; -fx-text-fill: black; -fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 50;"
-          text="               Contraseña" textOverrun="LEADING_WORD_ELLIPSIS"/>
-   <TextField fx:id="txtNombre" layoutX="255.0" layoutY="202.0" prefHeight="25.0" prefWidth="166.0"/>
-   <TextField fx:id="txtContraseña" layoutX="252.0" layoutY="295.0" prefHeight="25.0" prefWidth="166.0"/>
-   <Button fx:id="bttIngresar" layoutX="254.0" layoutY="342.0" mnemonicParsing="false" onAction="#verificar"
-           prefHeight="39.0" prefWidth="166.0"
-           style="-fx-background-color: blue; -fx-border-radius: 50; -fx-background-position: 50; -fx-background-radius: 50; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.0, 0, 1); -fx-text-fill: white;"
-           text="Ingresar">
+   <Label alignment="TOP_LEFT" graphicTextGap="10.0" layoutX="255.0" layoutY="169.0" prefHeight="17.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 50;" text="                   Nombre" textOverrun="LEADING_WORD_ELLIPSIS" />
+   <Label alignment="TOP_LEFT" graphicTextGap="10.0" layoutX="255.0" layoutY="256.0" prefHeight="17.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 50;" text="               Contraseña" textOverrun="LEADING_WORD_ELLIPSIS" />
+   <TextField fx:id="txtNombre" layoutX="255.0" layoutY="202.0" prefHeight="25.0" prefWidth="166.0" />
+   <TextField fx:id="txtContraseña" layoutX="252.0" layoutY="295.0" prefHeight="25.0" prefWidth="166.0" />
+   <Button fx:id="bttIngresar" layoutX="254.0" layoutY="342.0" mnemonicParsing="false" onAction="#verificar" prefHeight="39.0" prefWidth="166.0" style="-fx-background-color: blue; -fx-border-radius: 50; -fx-background-position: 50; -fx-background-radius: 50; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.0, 0, 1); -fx-text-fill: white;" text="Ingresar">
       <font>
-         <Font name="Lucida Bright Demibold" size="12.0"/>
+         <Font name="Lucida Bright Demibold" size="12.0" />
       </font>
    </Button>
    <ImageView fitHeight="29.0" fitWidth="34.0" layoutX="268.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
       <image>
-         <Image url="@../../imagenes/user.png"/>
+         <Image url="@../../imagenes/user.png" />
       </image>
    </ImageView>
 </AnchorPane>

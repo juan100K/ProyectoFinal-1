@@ -14,7 +14,7 @@
             <Image url="@../../imagenes/Avatar Usuario.png" />
          </image>
       </ImageView>
-      <Button fx:id="bttRegistrarAdministrar" blendMode="MULTIPLY" contentDisplay="CENTER" layoutX="352.0" layoutY="243.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="170.0" style="-fx-background-color: purple; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.0, 0, 1);; -fx-background-radius: 50; -fx-padding: 10px 30px; -fx-background-position: 50; -fx-border-radius: 50; -fx-text-fill: white;" stylesheets="@styles.css" text="Registrarse" textAlignment="CENTER" textOverrun="CLIP">
+      <Button fx:id="bttRegistrarAdministrar" blendMode="MULTIPLY" contentDisplay="CENTER" layoutX="352.0" layoutY="243.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="170.0" style="-fx-background-color: purple; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.0, 0, 1);; -fx-background-radius: 50; -fx-padding: 10px 30px; -fx-background-position: 50; -fx-border-radius: 50; -fx-text-fill: white;"  text="Registrarse" textAlignment="CENTER" textOverrun="CLIP">
          <font>
             <Font name="Times New Roman Italic" size="18.0" />
          </font>
@@ -22,7 +22,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="bttIngresar" contentDisplay="CENTER" layoutX="67.0" layoutY="243.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="170.0" style="-fx-background-color: purple; -fx-background-radius: 50; -fx-padding: 10px 30px; -fx-background-position: 50; -fx-border-radius: 50; -fx-text-fill: white;" stylesheets="@styles.css" text="Ingresar" textAlignment="CENTER" textOverrun="CLIP">
+      <Button fx:id="bttIngresar" contentDisplay="CENTER" layoutX="67.0" layoutY="243.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="170.0" style="-fx-background-color: purple; -fx-background-radius: 50; -fx-padding: 10px 30px; -fx-background-position: 50; -fx-border-radius: 50; -fx-text-fill: white;"  text="Ingresar" textAlignment="CENTER" textOverrun="CLIP">
          <font>
             <Font name="Times New Roman Italic" size="18.0" />
          </font>

@@ -2,6 +2,7 @@ package viewController;
 
 import controller.Guardar;
 import controller.ModelController;
+import controller.VendedorController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -16,6 +17,7 @@ import model.Vendedor;
 import org.mapstruct.Mappings;
 
 import javax.swing.*;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -26,6 +28,8 @@ public class VendedorviewController {
 
     @FXML
     ObservableList<VendedorDto>listaVendedor= FXCollections.observableArrayList();
+
+    VendedorController vendedor;
 
     List<Vendedor>vendedores=new ArrayList<>();
     @FXML
@@ -49,11 +53,12 @@ public class VendedorviewController {
 
     @FXML
     void initialize(){
+        vendedor=new VendedorController();
 
     }
 
     @FXML
-    void agregarVendedor(ActionEvent event){
+    void agregarVendedor(ActionEvent event) throws IOException {
         crearVendedor();
     }
 
@@ -67,8 +72,8 @@ public class VendedorviewController {
                 nombre,
                 apellido,
                 cedula,
-                direccion,
-                null
+                direccion
+
 
         );
 
@@ -83,22 +88,24 @@ public class VendedorviewController {
         
     }
 
-    private void crearVendedor(){
+    private void crearVendedor() throws IOException {
         VendedorDto vendedorDto=Vendedor();
-        if(datosValidos(vendedorDto)){
-            listaVendedor.add(vendedorDto);
-            Vendedor vendedor= MapperMarket.INSTANCE.vendedorDto(vendedorDto);
-            vendedores.add(vendedor);
-            for (Vendedor m:vendedores){
-                System.out.println(m.getNombre());
+        if(datosValidos(vendedorDto)) {
+            if (vendedor.agregarEmpleado(vendedorDto)) {
+                listaVendedor.add(vendedorDto);
+                Vendedor vendedor = MapperMarket.INSTANCE.vendedorDto(vendedorDto);
+                vendedores.add(vendedor);
+                ModelController.getInstance().guardarVendedor(vendedorDto);
+                for (Vendedor m : vendedores) {
+                    System.out.println(m.getNombre());
+                }
+                ExecutorService executorService = Executors.newFixedThreadPool(1);
+                ModelController.getInstance().guardarxml();
+                limpiarCampo();
+                mostrarMensaje("Notificacio vendedor", "vendedor creado", "vendedor creado con exito", Alert.AlertType.INFORMATION);
+            } else {
+                mostrarMensaje("Notificacion Vendedor", "vendedor no asignado", "el vendedor no se acreado", Alert.AlertType.ERROR);
             }
-            ExecutorService executorService= Executors.newFixedThreadPool(1);
-            Thread hiloGuardar=new Thread(new Guardar(vendedores));
-            executorService.execute(hiloGuardar);
-            limpiarCampo();
-            mostrarMensaje("Notificacio vendedor","vendedor creado","vendedor creado con exito", Alert.AlertType.INFORMATION);
-        }else {
-            mostrarMensaje("Notificacion Vendedor","vendedor no asignado","el vendedor no se acreado", Alert.AlertType.ERROR);
         }
     }
 

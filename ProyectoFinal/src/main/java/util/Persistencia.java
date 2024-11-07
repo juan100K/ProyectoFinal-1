@@ -10,7 +10,7 @@ import java.util.List;
 public class Persistencia {
 
     private final String rutaLog="ProyectoFinal/src/main/resources/Log/log.txt";
-    private final String rutaxml="ProyectoFinal/src/main/resources/archivoVendedor.xml";
+    private static final String rutaxml="ProyectoFinal/src/main/resources/archivoVendedor.xml";
 
     private final String rutaVendedor="ProyectoFinal/src/main/resources/archivos/salvarDatosVendedor.txt";
 
@@ -28,13 +28,13 @@ public class Persistencia {
         archivoUtils.guardarRegistroLog(mensaje,nivel,accion,rutaLog);
     }
 
-    public void guardarVendedorxml(List<Vendedor>vendedorDto) throws IOException {
-        archivoUtils.xml(rutaxml,vendedorDto,true);
+    public static void guardarVendedorxml(List<Vendedor> market) throws IOException {
+       ArchivoUtils.xml(rutaxml,market);
     }
 
-    public void cargarDatos() throws IOException {
-        ArchivoUtils.deseralizacionObjetoXML(rutaxml);
-
+    public List<Vendedor> cargarDatos() throws IOException {
+       List<Vendedor>list= (List<Vendedor>) ArchivoUtils.deseralizacionObjetoXML(rutaxml);
+        return list;
     }
     public void salvarDatosVendedores(List<Vendedor>vendedorList) throws IOException {
         String contenido=" ";
@@ -43,5 +43,7 @@ public class Persistencia {
         }
         archivoUtils.crearArchivo(rutaVendedor,contenido,true);
     }
+
+
 
 }

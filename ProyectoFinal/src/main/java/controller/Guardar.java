@@ -19,23 +19,11 @@ public class Guardar implements Runnable{
 
     @Override
     public void run() {
-        try {
-            guardarxml();
-            salvarDatos();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
 
 
     }
 
-    public synchronized void guardarxml() throws IOException {
-      persistencia.guardarVendedorxml(vendedorList);
-    }
 
-    public synchronized void salvarDatos() throws IOException {
-        persistencia.salvarDatosVendedores(vendedorList);
-    }
 
 
     public void cargar(){
