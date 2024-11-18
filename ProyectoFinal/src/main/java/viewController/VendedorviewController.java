@@ -1,6 +1,6 @@
 package viewController;
 
-import controller.Guardar;
+
 import controller.ModelController;
 import controller.VendedorController;
 import javafx.collections.FXCollections;
@@ -31,7 +31,7 @@ public class VendedorviewController {
 
     VendedorController vendedor;
 
-    List<Vendedor>vendedores=new ArrayList<>();
+
     @FXML
     private Button bttAgregarVendedor;
 
@@ -67,12 +67,12 @@ public class VendedorviewController {
         String nombre= txtNombre.getText();
         String apellido= txtApellido.getText();
         String cedula= txtCedula.getText();
-        String direccion= txtDireccion.getText();
+        String email= txtDireccion.getText();
         return new VendedorDto(
                 nombre,
                 apellido,
                 cedula,
-                direccion
+                email
 
 
         );
@@ -91,16 +91,8 @@ public class VendedorviewController {
     private void crearVendedor() throws IOException {
         VendedorDto vendedorDto=Vendedor();
         if(datosValidos(vendedorDto)) {
-            if (vendedor.agregarEmpleado(vendedorDto)) {
+            if (vendedor.agregarVendedor(vendedorDto)) {
                 listaVendedor.add(vendedorDto);
-                Vendedor vendedor = MapperMarket.INSTANCE.vendedorDto(vendedorDto);
-                vendedores.add(vendedor);
-                ModelController.getInstance().guardarVendedor(vendedorDto);
-                for (Vendedor m : vendedores) {
-                    System.out.println(m.getNombre());
-                }
-                ExecutorService executorService = Executors.newFixedThreadPool(1);
-                ModelController.getInstance().guardarxml();
                 limpiarCampo();
                 mostrarMensaje("Notificacio vendedor", "vendedor creado", "vendedor creado con exito", Alert.AlertType.INFORMATION);
             } else {
@@ -117,7 +109,7 @@ public class VendedorviewController {
         if(vendedorDto.cedula()==null || vendedorDto.cedula().equals(" ")){
            mensaje+="Espacio sin rellenar o invalido";
         }
-        if (vendedorDto.direccion()==null || vendedorDto.direccion().equals("")){
+        if (vendedorDto.email()==null || vendedorDto.email().equals("")){
             mensaje+="Espacio sin rellenar";
         }
         if (vendedorDto.apellido()==null || vendedorDto.apellido().equals("")){
@@ -138,5 +130,8 @@ public class VendedorviewController {
         aler.setContentText(contenido);
         aler.showAndWait();
     }
+
+
+
 
 }

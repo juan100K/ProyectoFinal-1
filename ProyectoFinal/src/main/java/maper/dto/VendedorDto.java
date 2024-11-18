@@ -6,7 +6,7 @@ public record VendedorDto(
         String nombre,
         String apellido,
         String cedula,
-        String direccion
+        String email
 
 
 ) {

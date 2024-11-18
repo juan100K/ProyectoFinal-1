@@ -1,20 +1,12 @@
 package model;
 
-import controller.ModelController;
-import controller.ServiceController.VendedroInterface;
-import maper.dto.VendedorDto;
-import maper.mapper.MapperMarket;
+import model.service.IVendedorService;
 
 import java.util.ArrayList;
 
-public class Market implements VendedroInterface {
+public class Market implements IVendedorService {
 
-    MapperMarket mapperMarket=MapperMarket.INSTANCE;
-
-    ModelController modelController;
-
-    ArrayList<Vendedor>listaVendedores=new ArrayList<Vendedor>();
-    ArrayList<Productos>listaProducto=new ArrayList<>();
+    ArrayList<Vendedor>listaVendedores=new ArrayList<>();
 
     public ArrayList<Vendedor> getListaVendedores() {
         return listaVendedores;
@@ -24,11 +16,9 @@ public class Market implements VendedroInterface {
 
     }
 
-    public Market(ArrayList<Vendedor> listaVendedores) {
-        this.listaVendedores = listaVendedores;
-    }
 
 
+    @Override
     public Vendedor crearVendedor(String name,String apellido,String cedula,String direccion){
         Vendedor vendedor=null;
         vendedor=new Vendedor();
@@ -42,14 +32,17 @@ public class Market implements VendedroInterface {
     }
 
 
-    @Override
-    public boolean agregarEmpleado(VendedorDto vendedorDto) {
-        return modelController.agregarEmplado(vendedorDto);
-    }
 
 
     public void agregarVendedor(Vendedor vendedor){
         getListaVendedores().add(vendedor);
+    }
+
+    public void mostrarVendedoresAntesDeSerializar() {
+        System.out.println("Vendedores antes de serializar:");
+        for (Vendedor vendedor : getListaVendedores()) {
+            System.out.println(vendedor.getNombre() + " " + vendedor.getApellido());
+        }
     }
 
 
