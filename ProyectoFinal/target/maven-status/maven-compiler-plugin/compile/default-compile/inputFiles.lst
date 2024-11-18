@@ -1,3 +1,31 @@
-C:\Users\casti\OneDrive\Documentos\Programacion 3\pr3_diurna_20241\ProyectoFinal\ProyectoFinal\ProyectoFinal\src\main\java\controller\IniciarSesionViewController.java
-C:\Users\casti\OneDrive\Documentos\Programacion 3\pr3_diurna_20241\ProyectoFinal\ProyectoFinal\ProyectoFinal\src\main\java\uq\proyectofinal\Main.java
-C:\Users\casti\OneDrive\Documentos\Programacion 3\pr3_diurna_20241\ProyectoFinal\ProyectoFinal\ProyectoFinal\src\main\java\module-info.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\viewController\VendedorviewController.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\maper\mapper\MapperMarket.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\model\Market.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\viewController\VentanaAdministradorviewController.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\controller\VendedorController.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\maper\dto\VendedorDto.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\maper\dto\ProductosDto.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\maper\dto\person.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\controller\ServiceController\Service\VendedorControllerService.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\viewController\IniciarSecionVendedorViewController.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\controller\IniciarSecionController.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\uq\proyectofinal\Main.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\model\Administrador.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\model\Productos.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\model\Contactos.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\viewController\ventanaVendedorViewController.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\controller\ModelController.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\controller\ServiceController\Monitor.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\model\service\IVendedorService.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\viewController\IniciarSesionViewController.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\viewController\RegistrarAdministradorViewController.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\controller\ServiceController\Service\IModelFactoryService.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\viewController\LogginviewController.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\util\Persistencia.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\maper\dto\AdministradorDto.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\model\Vendedor.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\model\Persona.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\viewController\LogginVendedorviewController.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\controller\SesionAdministradorController.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\util\ArchivoUtils.java
+C:\Users\casti\OneDrive\Documentos\PROGRA\ProyectoFinal-1\ProyectoFinal\src\main\java\module-info.java

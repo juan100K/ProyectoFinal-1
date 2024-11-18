@@ -1,7 +1,8 @@
 package viewController;
 
-import controller.Guardar;
+
 import controller.ModelController;
+import controller.VendedorController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -16,6 +17,7 @@ import model.Vendedor;
 import org.mapstruct.Mappings;
 
 import javax.swing.*;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -27,7 +29,9 @@ public class VendedorviewController {
     @FXML
     ObservableList<VendedorDto>listaVendedor= FXCollections.observableArrayList();
 
-    List<Vendedor>vendedores=new ArrayList<>();
+    VendedorController vendedor;
+
+
     @FXML
     private Button bttAgregarVendedor;
 
@@ -49,11 +53,12 @@ public class VendedorviewController {
 
     @FXML
     void initialize(){
+        vendedor=new VendedorController();
 
     }
 
     @FXML
-    void agregarVendedor(ActionEvent event){
+    void agregarVendedor(ActionEvent event) throws IOException {
         crearVendedor();
     }
 
@@ -62,13 +67,13 @@ public class VendedorviewController {
         String nombre= txtNombre.getText();
         String apellido= txtApellido.getText();
         String cedula= txtCedula.getText();
-        String direccion= txtDireccion.getText();
+        String email= txtDireccion.getText();
         return new VendedorDto(
                 nombre,
                 apellido,
                 cedula,
-                direccion,
-                null
+                email
+
 
         );
 
@@ -83,22 +88,16 @@ public class VendedorviewController {
         
     }
 
-    private void crearVendedor(){
+    private void crearVendedor() throws IOException {
         VendedorDto vendedorDto=Vendedor();
-        if(datosValidos(vendedorDto)){
-            listaVendedor.add(vendedorDto);
-            Vendedor vendedor= MapperMarket.INSTANCE.vendedorDto(vendedorDto);
-            vendedores.add(vendedor);
-            for (Vendedor m:vendedores){
-                System.out.println(m.getNombre());
+        if(datosValidos(vendedorDto)) {
+            if (vendedor.agregarVendedor(vendedorDto)) {
+                listaVendedor.add(vendedorDto);
+                limpiarCampo();
+                mostrarMensaje("Notificacio vendedor", "vendedor creado", "vendedor creado con exito", Alert.AlertType.INFORMATION);
+            } else {
+                mostrarMensaje("Notificacion Vendedor", "vendedor no asignado", "el vendedor no se acreado", Alert.AlertType.ERROR);
             }
-            ExecutorService executorService= Executors.newFixedThreadPool(1);
-            Thread hiloGuardar=new Thread(new Guardar(vendedores));
-            executorService.execute(hiloGuardar);
-            limpiarCampo();
-            mostrarMensaje("Notificacio vendedor","vendedor creado","vendedor creado con exito", Alert.AlertType.INFORMATION);
-        }else {
-            mostrarMensaje("Notificacion Vendedor","vendedor no asignado","el vendedor no se acreado", Alert.AlertType.ERROR);
         }
     }
 
@@ -110,7 +109,7 @@ public class VendedorviewController {
         if(vendedorDto.cedula()==null || vendedorDto.cedula().equals(" ")){
            mensaje+="Espacio sin rellenar o invalido";
         }
-        if (vendedorDto.direccion()==null || vendedorDto.direccion().equals("")){
+        if (vendedorDto.email()==null || vendedorDto.email().equals("")){
             mensaje+="Espacio sin rellenar";
         }
         if (vendedorDto.apellido()==null || vendedorDto.apellido().equals("")){
@@ -131,5 +130,8 @@ public class VendedorviewController {
         aler.setContentText(contenido);
         aler.showAndWait();
     }
+
+
+
 
 }

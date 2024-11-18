@@ -1,6 +1,5 @@
 package viewController;
 
-import controller.ModelController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,35 +10,31 @@ import javafx.stage.Stage;
 import uq.proyectofinal.Main;
 
 import java.io.IOException;
-import java.util.logging.Logger;
 
-public class IniciarSesionViewController {
+public class LogginVendedorviewController {
+
 
     @FXML
-    private Button bttIngresar;
-  @FXML
-  private Button bttRegistrarAdministrar;
+    private Button bttIngresoAdministrador;
+
+    @FXML
+    private Button bttIngresoVendedor;
+
 
     @FXML
     void initialize(){
-        this.bttIngresar.setOnAction(this::ingresarAdmin);
-        this.bttRegistrarAdministrar.setOnAction(this::registrarAdministrador);
+        this.bttIngresoAdministrador.setOnAction(this::iniciarSecionAdministrador);
+        this.bttIngresoVendedor.setOnAction(this::iniciarSecionVendedor);
+
+
     }
 
-
-
-
-    private void ingresarAdmin(ActionEvent event){
-        this.loadWindow("ingresioMarket.fxml");
-        ModelController.getInstance().RegistrarAdminitrador("Inicio Secicion",1,"Secion");
-
+    private void iniciarSecionVendedor(ActionEvent event){
+        loadWindow("LogginVendedor.fxml");
     }
-    private void registrarAdministrador(ActionEvent event){
-        this.loadWindow("regitrarAdministrador.fxml");
+    private void iniciarSecionAdministrador(javafx.event.ActionEvent event){
+        loadWindow("ingresoAdministrador.fxml");
     }
-
-
-
 
     private void loadWindow(String fxmlFile) {
         try {
@@ -53,10 +48,5 @@ public class IniciarSesionViewController {
             e.printStackTrace();
         }
     }
-
-
-
-
-
 
 }

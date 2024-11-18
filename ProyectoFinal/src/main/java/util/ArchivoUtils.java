@@ -5,6 +5,7 @@ import model.Vendedor;
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.logging.FileHandler;
@@ -17,7 +18,7 @@ public class ArchivoUtils {
 
 
 
-    public void crearArchivo(String ruta,String contenido,boolean flagAnexar) throws IOException {
+    public static void crearArchivo(String ruta,String contenido,boolean flagAnexar) throws IOException {
         FileWriter fr=new FileWriter(ruta,flagAnexar);
         BufferedWriter bw=new BufferedWriter(fr);
         bw.write(contenido);
@@ -27,9 +28,11 @@ public class ArchivoUtils {
 
 
 
-    public void xml(String nombre,Object object,boolean anexar)throws IOException{
+
+
+    public static void xml(String nombre,Object object)throws IOException{
         XMLEncoder codificar;
-        codificar=new XMLEncoder(new FileOutputStream(nombre,anexar));
+        codificar=new XMLEncoder(new FileOutputStream(nombre));
         codificar.writeObject(object);
         codificar.close();
 
@@ -45,6 +48,9 @@ public class ArchivoUtils {
         return object;
 
     }
+
+
+
 
 
 
@@ -123,6 +129,20 @@ public class ArchivoUtils {
         //		fechaSistema = año+"-"+mesN+"-"+diaN+"-"+hora+"-"+minuto;
         fechaSistema = año+"-"+mesN+"-"+diaN;
         //		horaFechaSistema = hora+"-"+minuto;
+    }
+
+    public static ArrayList<String>leerDatos(String ruta) throws IOException {
+        ArrayList<String>contenido=new ArrayList<String>();
+        FileReader fr=new FileReader(ruta);
+        BufferedReader br=new BufferedReader(fr);
+        String linea=" ";
+        while ((linea=br.readLine())!=null){
+            contenido.add(linea);
+        }
+        br.close();
+        fr.close();
+        return contenido;
+
     }
 
 }

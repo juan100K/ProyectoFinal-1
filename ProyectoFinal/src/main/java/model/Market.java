@@ -1,15 +1,12 @@
 package model;
 
-import maper.dto.VendedorDto;
-import maper.mapper.MapperMarket;
+import model.service.IVendedorService;
 
 import java.util.ArrayList;
 
-public class Market  {
+public class Market implements IVendedorService {
 
-    MapperMarket mapperMarket=MapperMarket.INSTANCE;
-
-    ArrayList<Vendedor>listaVendedores=new ArrayList<Vendedor>();
+    ArrayList<Vendedor>listaVendedores=new ArrayList<>();
 
     public ArrayList<Vendedor> getListaVendedores() {
         return listaVendedores;
@@ -19,11 +16,9 @@ public class Market  {
 
     }
 
-    public Market(ArrayList<Vendedor> listaVendedores) {
-        this.listaVendedores = listaVendedores;
-    }
 
 
+    @Override
     public Vendedor crearVendedor(String name,String apellido,String cedula,String direccion){
         Vendedor vendedor=null;
         vendedor=new Vendedor();
@@ -34,6 +29,20 @@ public class Market  {
         getListaVendedores().add(vendedor);
 
         return vendedor;
+    }
+
+
+
+
+    public void agregarVendedor(Vendedor vendedor){
+        getListaVendedores().add(vendedor);
+    }
+
+    public void mostrarVendedoresAntesDeSerializar() {
+        System.out.println("Vendedores antes de serializar:");
+        for (Vendedor vendedor : getListaVendedores()) {
+            System.out.println(vendedor.getNombre() + " " + vendedor.getApellido());
+        }
     }
 
 

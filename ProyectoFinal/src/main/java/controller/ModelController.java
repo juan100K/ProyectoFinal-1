@@ -1,5 +1,7 @@
 package controller;
 
+import controller.ServiceController.Monitor;
+import controller.ServiceController.Service.IModelFactoryService;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -9,42 +11,48 @@ import maper.mapper.MapperMarket;
 import model.Market;
 import model.Vendedor;
 import uq.proyectofinal.Main;
-import util.ArchivoUtils;
 import util.Persistencia;
-
 import java.io.IOException;
-import java.util.Properties;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.List;
 
-public class ModelController implements Runnable{
+public class ModelController implements IModelFactoryService,Runnable{
 
    private Persistencia persistencia=new Persistencia();
-   private Properties properties;
 
 
 
-   MapperMarket mapperMarket=MapperMarket.INSTANCE;
+   MapperMarket mapperMarket= MapperMarket.INSTANCE;
    Market market;
 
-   Thread hilo1xml=new Thread();
+    public Market getMarket() {
+        return market;
+    }
+
+    Thread hilo1xml;
    Thread hilo2binario=new Thread();
-    ExecutorService executorService= Executors.newFixedThreadPool(1);
+    Monitor semaforo=new Monitor(1);
 
-    VendedorDto vendedor;
 
-    private static ModelController modelController;
 
-    private ModelController(){
+
+
+
+
+    public ModelController(){
+        System.out.println("Invocacion Singleton");
+        if(market==null){
+           market=new Market();
+        }
+
+    }
+
+    private static class singletonHolder{
+        private final static ModelController eInstance=new ModelController();
 
     }
 
 public synchronized static ModelController getInstance(){
-        if(modelController==null){
-            modelController=new ModelController();
-            return modelController;
-        }
-        return modelController;
+        return singletonHolder.eInstance;
 }
 
 public void RegistrarAdminitrador(String mensaje,int nivel,String accion){
@@ -64,38 +72,76 @@ public void RegistrarAdminitrador(String mensaje,int nivel,String accion){
     }
 
 
-    @Override
     public void run() {
-        Thread hilo=Thread.currentThread();
-        executorService.execute(hilo);
-        if(hilo==hilo1xml){
-            /*
+        Thread hilo = Thread.currentThread();
+        ocupar();
+        if (hilo == hilo1xml) {
             try {
-             //   persistencia.guardarVendedorxml(vendedor);
-                System.out.println("Guardar");
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println("Guardando vendedores...");
+                System.out.println(market);
+                getMarket().mostrarVendedoresAntesDeSerializar();
+                Persistencia.guardarVendedorxml(market);
+                System.out.println("Guardado.");
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            try {
-                persistencia.guardarVendedorxml(vendedor);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-
-             */
+            liberar();
         }
-
-
-    }
-    public boolean agregarEmplado(VendedorDto vendedorDto){
-        Vendedor vendedor= mapperMarket.vendedorDto(vendedorDto);
-        return false;
     }
 
-    public void guardarxml(Object object){
+
+
+    private void cargarDatos(){
+        market=new Market();
+        try {
+            Persistencia.cargarDatos(market);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void guardarxml(){
         hilo1xml=new Thread(this);
         hilo1xml.start();
     }
 
+    private void liberar()  {
+        try {
+            semaforo.liberar();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    private void ocupar(){
+        try {
+            semaforo.ocupar();
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
 
+    }
+
+
+
+
+
+    private void salvarDatos(){
+        try {
+            Persistencia.guardarVendedor(getMarket().getListaVendedores());
+
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+
+    @Override
+    public boolean agregarVendedor(VendedorDto vendedorDto) {
+        Vendedor vendedor= mapperMarket.vendedorDto(vendedorDto);
+        getMarket().agregarVendedor(vendedor);
+        System.out.println("se agrego el vendedor {"+vendedor.getNombre()+"}");
+        guardarxml();
+        salvarDatos();
+        return true;
+    }
 }
